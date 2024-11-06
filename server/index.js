@@ -13,11 +13,12 @@ const MONGODB_URI = process.env.MONGODB_URI
 const app = express();
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: 'https://deploy-mern-1whq.vercel.app',
+  method:["POST","GET"],
   credentials: true
 }));
 
-mongoose.connect(MONGODB_URI, {
+mongoose.connect('mongodb+srv://hgaroum:ITA8u46qZlZt823n@Contacts.umaaa.mongodb.net/Usersdb?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
