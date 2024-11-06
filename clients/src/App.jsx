@@ -7,7 +7,7 @@ import Form from './Component/Form'
 
 // Créer une instance axios avec la configuration de base
 const api = axios.create({
-  baseURL: 'garoummernstackregister.vercel.app
+  baseURL: 'https://garoummernstackregister.vercel.app
 ',
   headers: {
     'Content-Type': 'application/json'
